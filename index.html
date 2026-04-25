@@ -115,13 +115,17 @@
         </a>
     </div>
 
-    <script>
-        const btn = document.getElementById("contact-btn");
+   <script>
+    const btn = document.getElementById("contact-btn");
 
-        btn.addEventListener("click", function() {
+    btn.addEventListener("click", function() {
+        if (btn.style.backgroundColor === "red") {
+            btn.style.backgroundColor = "blue";
+        } else {
             btn.style.backgroundColor = "red";
-        });
-    </script>
+        }
+    });
+     </script>
 
 </body>
 </html>
