@@ -5,45 +5,41 @@
     <title>Giới thiệu bản thân - Thu Thắm</title>
 
     <style>
-        /* Thiết lập font và nền hiện đại */
         body {
-            font-family: 'Inter', sans-serif; /* Font hiện đại, rõ ràng */
+            font-family: 'Inter', sans-serif;
             background-color: #dbeafe;
-            background-image: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%); /* Hiệu ứng nền gradient nhẹ */
+            background-image: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%);
             text-align: center;
             padding-top: 60px;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Căn giữa theo chiều dọc */
+            min-height: 100vh;
         }
 
-        /* Thiết kế khung 'Glassmorphism' */
         .container {
             width: 80%;
             max-width: 600px;
             margin: auto;
-            background: rgba(255, 255, 255, 0.85); /* Hiệu ứng mờ nền */
+            background: rgba(255, 255, 255, 0.85);
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bóng mờ chuyên nghiệp */
-            backdrop-filter: blur(5px); /* Làm mờ nền bên dưới khung */
-            border: 1px solid rgba(255, 255, 255, 0.5); /* Viền kính nhẹ */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
-        /* Định dạng ảnh chân dung */
         .portrait {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Cắt tròn ảnh */
-            object-fit: cover; /* Đảm bảo ảnh không bị méo */
-            border: 5px solid white; /* Viền ảnh nổi bật */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bóng mờ cho ảnh */
-            margin-bottom: 25px; /* Khoảng cách dưới ảnh */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 25px;
         }
 
-        /* Định dạng các tiêu đề và văn bản */
         h1 {
             color: darkblue;
             margin-bottom: 5px;
@@ -65,7 +61,6 @@
             margin-bottom: 30px;
         }
 
-        /* Định dạng nút 'Liên hệ' */
         button {
             background-color: blue;
             color: white;
@@ -76,16 +71,15 @@
             font-size: 18px;
             font-weight: 600;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.2s ease; /* Hiệu ứng mượt mà */
+            transition: all 0.2s ease;
         }
 
         button:hover {
             background-color: darkblue;
-            transform: translateY(-2px); /* Hiệu ứng nhấn nhẹ */
+            transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        /* Định dạng link Facebook */
         a.fb-link {
             display: flex;
             align-items: center;
@@ -102,24 +96,32 @@
 
         a.fb-link:hover {
             text-decoration: underline;
-            background-color: rgba(24, 119, 242, 0.05); /* Hiệu ứng hover nhẹ */
+            background-color: rgba(24, 119, 242, 0.05);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-     <img src="chan-dung.png" alt="Ảnh chân dung Thu Than" class="portrait">        
+        <img src="chan-dung.png" alt="Ảnh chân dung Thu Thắm" class="portrait">        
         <h1>Thu Thắm</h1>
         <p class="sub-text">Sinh viên ngành Công nghệ thông tin</p>
         <p class="info-text">Yêu thích: thể thao, làm web</p>
         
-        <button>Liên hệ với tôi</button>
+        <button id="contact-btn">Liên hệ với tôi</button>
         
         <a href="HÃY_DÁN_LINK_FACEBOOK_CỦA_BẠN_VÀO_ĐÂY" target="_blank" class="fb-link">
             Trang Facebook của mình
         </a>
     </div>
+
+    <script>
+        const btn = document.getElementById("contact-btn");
+
+        btn.addEventListener("click", function() {
+            btn.style.backgroundColor = "red";
+        });
+    </script>
 
 </body>
 </html>
