@@ -2,55 +2,123 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Giới thiệu bản thân</title>
+    <title>Giới thiệu bản thân - Thu Thắm</title>
 
     <style>
-        body{
-            font-family: Arial;
+        /* Thiết lập font và nền hiện đại */
+        body {
+            font-family: 'Inter', sans-serif; /* Font hiện đại, rõ ràng */
             background-color: #dbeafe;
+            background-image: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%); /* Hiệu ứng nền gradient nhẹ */
             text-align: center;
-            padding-top: 40px;
+            padding-top: 60px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Căn giữa theo chiều dọc */
         }
 
-        .container{
-            width: 60%;
+        /* Thiết kế khung 'Glassmorphism' */
+        .container {
+            width: 80%;
+            max-width: 600px;
             margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px gray;
+            background: rgba(255, 255, 255, 0.85); /* Hiệu ứng mờ nền */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bóng mờ chuyên nghiệp */
+            backdrop-filter: blur(5px); /* Làm mờ nền bên dưới khung */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Viền kính nhẹ */
         }
 
-        h1{
+        /* Định dạng ảnh chân dung */
+        .portrait {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Cắt tròn ảnh */
+            object-fit: cover; /* Đảm bảo ảnh không bị méo */
+            border: 5px solid white; /* Viền ảnh nổi bật */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bóng mờ cho ảnh */
+            margin-bottom: 25px; /* Khoảng cách dưới ảnh */
+        }
+
+        /* Định dạng các tiêu đề và văn bản */
+        h1 {
             color: darkblue;
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-size: 32px;
         }
 
-        p{
+        .sub-text {
+            color: blue;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .info-text {
             font-size: 18px;
-            color: #333;
+            color: #555;
+            margin-bottom: 30px;
         }
 
-        button{
+        /* Định dạng nút 'Liên hệ' */
+        button {
             background-color: blue;
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
+            padding: 12px 30px;
+            border-radius: 10px;
             cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease; /* Hiệu ứng mượt mà */
         }
 
-        button:hover{
+        button:hover {
             background-color: darkblue;
+            transform: translateY(-2px); /* Hiệu ứng nhấn nhẹ */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Định dạng link Facebook */
+        a.fb-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            color: #1877F2;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 10px 15px;
+            transition: background-color 0.2s;
+        }
+
+        a.fb-link:hover {
+            text-decoration: underline;
+            background-color: rgba(24, 119, 242, 0.05); /* Hiệu ứng hover nhẹ */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+     <img src="chan-dung.png" alt="Ảnh chân dung Thu Than" class="portrait">        
         <h1>Thu Thắm</h1>
-        <p>Sinh viên ngành Công nghệ thông tin</p>
-        <p>Yêu thích: thể thao, làm web </p>
+        <p class="sub-text">Sinh viên ngành Công nghệ thông tin</p>
+        <p class="info-text">Yêu thích: thể thao, làm web</p>
+        
         <button>Liên hệ với tôi</button>
+        
+        <a href="HÃY_DÁN_LINK_FACEBOOK_CỦA_BẠN_VÀO_ĐÂY" target="_blank" class="fb-link">
+            Trang Facebook của mình
+        </a>
     </div>
 
 </body>
