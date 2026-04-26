@@ -1,0 +1,93 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #dbeafe;
+    background-image: linear-gradient(135deg, #dbeafe 0%, #ffffff 100%);
+    text-align: center;
+    padding-top: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: darkblue;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.sub-text {
+    color: blue;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.info-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+a.fb-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #1877F2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: background-color 0.2s;
+}
+
+a.fb-link:hover {
+    text-decoration: underline;
+    background-color: rgba(24, 119, 242, 0.05);
+}
